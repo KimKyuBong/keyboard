@@ -78,7 +78,11 @@
         VsTerm: VsTerm {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LEFT_SHIFT &kp GRAVE>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_SHIFT &kp GRAVE>,
+                <&macro_release>;
+
             label = "VSTERM";
         };
     };

@@ -39,8 +39,8 @@ layers:
   - RIGHT SHIFT
   - LEFT COMMAND
   - LEFT ALT
-  - '&LCS'
-  - '&RCS'
+  - {t: ␣, h: Move}
+  - {t: ␣, h: Function}
   - {t: Num, h: toggle}
   - RIGHT CONTROL
   Num:
@@ -168,7 +168,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -212,7 +212,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   KeyboardConfig:

@@ -85,10 +85,10 @@
             //                            | ESC/MEDIA | SPACE/NAV | TAB/MOUSE | # | ENTER/SYM | BSPC/NUM | DEL/FN  |
 
             bindings = <
-&mt ESC TAB     &kp Q  &kp W  &kp E             &kp R         &kp T    &kp Y  &kp U  &kp I              &kp O    &kp P                &kp BACKSPACE
-&kp LCTRL       &kp A  &kp S  &kp D             &kp F         &kp G    &kp H  &kp J  &kp K              &kp L    &kp SEMICOLON        &kp DELETE
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V         &kp B    &kp N  &kp M  &kp COMMA          &kp DOT  &mt BACKSLASH SLASH  &kp RIGHT_SHIFT
-                              &kp LEFT_COMMAND  &kp LEFT_ALT  &LCS     &RCS   &to 1  &kp RIGHT_CONTROL
+&mt ESC TAB     &kp Q  &kp W  &kp E             &kp R         &kp T          &kp Y        &kp U  &kp I              &kp O    &kp P                &kp BACKSPACE
+&kp LCTRL       &kp A  &kp S  &kp D             &kp F         &kp G          &kp H        &kp J  &kp K              &kp L    &kp SEMICOLON        &kp DELETE
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V         &kp B          &kp N        &kp M  &kp COMMA          &kp DOT  &mt BACKSLASH SLASH  &kp RIGHT_SHIFT
+                              &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 3 SPACE    &lt 4 SPACE  &to 1  &kp RIGHT_CONTROL
             >;
 
             label = "Q";

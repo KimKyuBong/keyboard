@@ -79,8 +79,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap_time 1>,
-                <&kp LCTRL &kp LEFT_SHIFT &kp GRAVE>;
+                <&macro_tap>,
+                <&kp LCTRL &kp LEFT_SHIFT &kp GRAVE>,
+                <&macro_tap_time 1>;
 
             label = "VSTERM";
         };

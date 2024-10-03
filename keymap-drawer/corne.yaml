@@ -40,7 +40,7 @@ layers:
   - LEFT COMMAND
   - LEFT ALT
   - '&DoubleNumLayer'
-  - {t: ␣, h: Function}
+  - '&ContinueSpace'
   - RIGHT ALT
   - RIGHT CONTROL
   Move:
@@ -127,8 +127,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - KP 0
+  - {t: ▽, type: trans}
   Function:
   - F11
   - F1
@@ -169,7 +169,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   KeyboardConfig:

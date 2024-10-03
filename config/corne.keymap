@@ -55,6 +55,17 @@
             label = "DOUBLENUMLAYER";
             #binding-cells = <0>;
             bindings = <&lt 1 SPACE>, <&lt 2 SPACE>;
+
+            tapping-term-ms = <400>;
+        };
+
+        ContinueSpace: ContinueSpace {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CONTINUESPACE";
+            #binding-cells = <0>;
+            bindings = <&lt 3 SPACE>, <&kp SPACE>;
+
+            tapping-term-ms = <400>;
         };
     };
 
@@ -69,10 +80,10 @@
             //                            | ESC/MEDIA | SPACE/NAV | TAB/MOUSE | # | ENTER/SYM | BSPC/NUM | DEL/FN  |
 
             bindings = <
-&mt ESC TAB     &kp Q  &kp W  &kp E             &kp R         &kp T              &kp Y        &kp U          &kp I              &kp O    &kp P                &kp BACKSPACE
-&kp LCTRL       &kp A  &kp S  &kp D             &kp F         &kp G              &kp H        &kp J          &kp K              &kp L    &kp SEMICOLON        &kp DELETE
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V         &kp B              &kp N        &kp M          &kp COMMA          &kp DOT  &mt BACKSLASH SLASH  &kp RIGHT_SHIFT
-                              &kp LEFT_COMMAND  &kp LEFT_ALT  &DoubleNumLayer    &lt 3 SPACE  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&mt ESC TAB     &kp Q  &kp W  &kp E             &kp R         &kp T              &kp Y           &kp U          &kp I              &kp O    &kp P                &kp BACKSPACE
+&kp LCTRL       &kp A  &kp S  &kp D             &kp F         &kp G              &kp H           &kp J          &kp K              &kp L    &kp SEMICOLON        &kp DELETE
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V         &kp B              &kp N           &kp M          &kp COMMA          &kp DOT  &mt BACKSLASH SLASH  &kp RIGHT_SHIFT
+                              &kp LEFT_COMMAND  &kp LEFT_ALT  &DoubleNumLayer    &ContinueSpace  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
 
             label = "Q";
@@ -100,7 +111,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE    &kp KP_SUBTRACT
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp PLUS
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER        &trans
-                        &trans  &trans  &trans    &trans  &trans           &kp KP_NUMBER_0
+                        &trans  &trans  &trans    &trans  &kp KP_NUMBER_0  &trans
             >;
 
             label = "N";

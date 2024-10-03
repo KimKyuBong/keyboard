@@ -20,8 +20,10 @@
 
 // Behavior configuration
 
-&ext_power EP_ON;
-&ext_power EP_OFF;
+&ext_power {
+    EP_ON;
+    EP_OFF;
+};
 
 &mt {
     tapping-term-ms = <200>;

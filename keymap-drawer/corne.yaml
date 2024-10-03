@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
-  EnglishQwerty:
+  Qwerty:
   - {t: ↹, h: Esc}
   - Q
   - W
@@ -41,7 +41,7 @@ layers:
   - LEFT ALT
   - {t: ␣, h: Number}
   - {t: ␣, h: Function}
-  - {t: RIGHT ALT, h: KeyboardConfig}
+  - RIGHT ALT
   - RIGHT CONTROL
   Number:
   - '`'
@@ -74,14 +74,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Home
+  - PAGE UP
+  - PAGE DOWN
+  - End
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: EnglishQwerty, h: toggle}
+  - {t: Qwerty, h: toggle}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -100,27 +100,27 @@ layers:
   - F10
   - F12
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Home
-  - Page Down
-  - Page Up
-  - End
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Insert
-  - Caps Lock
+  - INSERT
+  - CAPSLOCK
   - SCROLLLOCK
   - KP NUMLOCK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -168,10 +168,12 @@ layers:
   - ''
   - '&soft_off'
   - Reset
-  - ''
-  - ''
-  - {t: Reset, type: held}
+  - {type: held}
+  - {type: held}
+  - Reset
   - '&soft_off'
 combos:
 - p: [30, 31]
   k: B
+- p: [38, 39]
+  k: {t: ENTER, h: KeyboardConfig}

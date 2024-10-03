@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - ;
-  - DELETE
+  - ENTER
   - LEFT SHIFT
   - Z
   - X
@@ -87,6 +87,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   Macro:
+  - '&VsTerm'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -123,11 +124,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: Qwerty, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - {t: ▽, type: trans}
   Move:
   - '`'
@@ -141,7 +141,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - {t: ▽, type: trans}
+  - ⌦
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

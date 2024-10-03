@@ -74,6 +74,15 @@
         };
     };
 
+    macros {
+        VsTerm: VsTerm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LEFT_SHIFT &kp GRAVE>;
+            label = "VSTERM";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -86,7 +95,7 @@
 
             bindings = <
 &mt ESC TAB     &kp Q  &kp W  &kp E             &kp R         &kp T          &kp Y        &kp U  &kp I              &kp O    &kp P                &kp BACKSPACE
-&kp LCTRL       &kp A  &kp S  &kp D             &kp F         &kp G          &kp H        &kp J  &kp K              &kp L    &kp SEMICOLON        &kp DELETE
+&kp LCTRL       &kp A  &kp S  &kp D             &kp F         &kp G          &kp H        &kp J  &kp K              &kp L    &kp SEMICOLON        &kp ENTER
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V         &kp B          &kp N        &kp M  &kp COMMA          &kp DOT  &mt BACKSLASH SLASH  &kp RIGHT_SHIFT
                               &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 3 SPACE    &lt 4 SPACE  &to 1  &kp RIGHT_CONTROL
             >;
@@ -107,10 +116,10 @@
 
         Macro {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&VsTerm  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &to 0   &trans    &trans  &none   &trans
             >;
 
             label = "MC";
@@ -124,7 +133,7 @@
             //                     |       |       | HELD | # |     |     |     |
 
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7       &kp N8         &kp N9     &kp N0     &trans
+&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7       &kp N8         &kp N9     &kp N0     &kp DEL
 &trans     &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN     &kp UP         &kp RIGHT  &kp MINUS  &kp EQUAL
 &trans     &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END    &trans     &trans
                            &trans  &trans  &trans    &trans    &trans       &trans

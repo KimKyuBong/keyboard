@@ -142,7 +142,7 @@ layers:
   - RGB SAD
   - RGB SAI
   - '&soft_off'
-  - EP TOG
+  - OUT TOG
   - ''
   - ''
   - ''

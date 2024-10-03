@@ -71,9 +71,9 @@
             //                     |       |       | HELD | # |     |     |     |
 
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &kp DEL
-&trans     &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans  &trans
+&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7    &kp N8  &kp N9     &kp N0     &kp DEL
+&trans     &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp MINUS  &kp EQUAL
+&trans     &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans     &trans
                            &trans  &to 0   &trans    &trans    &trans    &trans
             >;
 
@@ -82,10 +82,10 @@
 
         Function {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp F11  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6    &kp F7     &kp F8          &kp F9          &kp F10  &kp F12
+&trans   &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PG_DN  &kp PG_UP       &kp END         &trans   &trans
+&trans   &trans  &trans  &trans  &trans  &trans    &kp INS   &kp CAPS   &kp SCROLLLOCK  &kp KP_NUMLOCK  &trans   &trans
+                         &trans  &trans  &trans    &trans    &trans     &trans
             >;
 
             label = "F";
@@ -93,10 +93,10 @@
 
         KeyboardConfig {
             bindings = <
-&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_ON   &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &soft_off
-&out OUT_TOG  &none         &none         &none         &none         &none           &rgb_ug RGB_OFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &sys_reset
-&none         &none         &none         &none         &none         &none           &none            &none            &rgb_ug RGB_SAD  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &bootloader
-                                          &none         &none         &none           &none            &none            &none
+&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_ON   &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &none
+&out OUT_TOG  &none         &none         &none         &none         &none           &rgb_ug RGB_OFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none
+&none         &none         &none         &none         &none         &none           &none            &none            &rgb_ug RGB_SAD  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &none
+                                          &soft_off     &sys_reset    &none           &none            &sys_reset       &soft_off
             >;
 
             label = "KC";

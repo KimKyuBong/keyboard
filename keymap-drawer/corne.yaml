@@ -66,8 +66,8 @@ layers:
   - ↓
   - ↑
   - →
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '-'
+  - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -87,6 +87,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Function:
+  - F11
   - F1
   - F2
   - F3
@@ -97,7 +98,6 @@ layers:
   - F8
   - F9
   - F10
-  - F11
   - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -105,6 +105,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Home
+  - Page Down
+  - Page Up
+  - End
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -113,14 +117,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Insert
+  - Caps Lock
+  - SCROLLLOCK
+  - KP NUMLOCK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -141,7 +141,7 @@ layers:
   - RGB HUI
   - RGB SAD
   - RGB SAI
-  - '&soft_off'
+  - ''
   - OUT TOG
   - ''
   - ''
@@ -153,7 +153,7 @@ layers:
   - RGB SPI
   - RGB BRD
   - RGB BRI
-  - Reset
+  - ''
   - ''
   - ''
   - ''
@@ -165,13 +165,13 @@ layers:
   - RGB SAD
   - RGB EFR
   - RGB EFF
-  - Boot
+  - ''
+  - '&soft_off'
+  - Reset
   - ''
   - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
+  - {t: Reset, type: held}
+  - '&soft_off'
 combos:
 - p: [30, 31]
   k: B

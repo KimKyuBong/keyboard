@@ -44,28 +44,33 @@
         };
 
         DoubleSpace {
-            bindings = <&lt 4 ENTER>;
+            bindings = <&lt 5 ENTER>;
             key-positions = <38 39>;
+        };
+
+        ConvLang {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <24 38>;
         };
     };
 
     behaviors {
-        DoubleNumLayer: DoubleNumLayer {
+        LCS: LCS {
             compatible = "zmk,behavior-tap-dance";
-            label = "DOUBLENUMLAYER";
+            label = "LCS";
             #binding-cells = <0>;
-            bindings = <&lt 1 SPACE>, <&lt 2 SPACE>;
+            bindings = <&lt 3 SPACE>, <&lt 1 SPACE>;
 
-            tapping-term-ms = <400>;
+            tapping-term-ms = <200>;
         };
 
-        ContinueSpace: ContinueSpace {
+        RCS: RCS {
             compatible = "zmk,behavior-tap-dance";
-            label = "CONTINUESPACE";
+            label = "RCS";
             #binding-cells = <0>;
-            bindings = <&lt 3 SPACE>, <&kp SPACE>;
+            bindings = <&lt 4 SPACE>, <&kp SPACE>;
 
-            tapping-term-ms = <400>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -80,13 +85,35 @@
             //                            | ESC/MEDIA | SPACE/NAV | TAB/MOUSE | # | ENTER/SYM | BSPC/NUM | DEL/FN  |
 
             bindings = <
-&mt ESC TAB     &kp Q  &kp W  &kp E             &kp R         &kp T              &kp Y           &kp U          &kp I              &kp O    &kp P                &kp BACKSPACE
-&kp LCTRL       &kp A  &kp S  &kp D             &kp F         &kp G              &kp H           &kp J          &kp K              &kp L    &kp SEMICOLON        &kp DELETE
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V         &kp B              &kp N           &kp M          &kp COMMA          &kp DOT  &mt BACKSLASH SLASH  &kp RIGHT_SHIFT
-                              &kp LEFT_COMMAND  &kp LEFT_ALT  &DoubleNumLayer    &ContinueSpace  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&mt ESC TAB     &kp Q  &kp W  &kp E             &kp R         &kp T    &kp Y  &kp U  &kp I              &kp O    &kp P                &kp BACKSPACE
+&kp LCTRL       &kp A  &kp S  &kp D             &kp F         &kp G    &kp H  &kp J  &kp K              &kp L    &kp SEMICOLON        &kp DELETE
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V         &kp B    &kp N  &kp M  &kp COMMA          &kp DOT  &mt BACKSLASH SLASH  &kp RIGHT_SHIFT
+                              &kp LEFT_COMMAND  &kp LEFT_ALT  &LCS     &RCS   &to 1  &kp RIGHT_CONTROL
             >;
 
             label = "Q";
+        };
+
+        Num {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &kp KP_NUMLOCK   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE    &kp KP_SUBTRACT
+&trans  &trans  &trans  &trans  &trans  &trans    &kp CAPSLOCK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp PLUS
+&trans  &trans  &trans  &trans  &trans  &trans    &kp SCROLLLOCK   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER        &trans
+                        &trans  &to 0   &trans    &kp KP_NUMBER_0  &trans           &trans
+            >;
+
+            label = "N";
+        };
+
+        Macro {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "MC";
         };
 
         Move {
@@ -106,23 +133,12 @@
             label = "M";
         };
 
-        Num {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE    &kp KP_SUBTRACT
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp PLUS
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER        &trans
-                        &trans  &trans  &trans    &trans  &kp KP_NUMBER_0  &trans
-            >;
-
-            label = "N";
-        };
-
         Function {
             bindings = <
-&kp F11  &kp F1      &kp F2        &kp F3          &kp F4          &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F12
-&trans   &kp INSERT  &kp CAPSLOCK  &kp SCROLLLOCK  &kp KP_NUMLOCK  &trans    &trans  &trans  &trans  &trans  &trans   &trans
-&trans   &trans      &trans        &trans          &trans          &trans    &trans  &trans  &trans  &trans  &trans   &trans
-                                   &trans          &trans          &trans    &trans  &trans  &trans
+&kp F11  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F12
+&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
+                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
             label = "F";

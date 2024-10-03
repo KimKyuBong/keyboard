@@ -61,4 +61,8 @@ include:
   - board: nice_nano_v2
     shield: corne_right nice_view_adapter nice_view
     artifact-name: nice_corne_right
-
+# Split Keyboard Halves Unable to Pair
+#     https://zmk.dev/docs/troubleshooting
+  - board: nice_nano_v2
+    shield: settings_reset
+    artifact-name: nice_settings_reset

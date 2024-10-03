@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - ;
-  - ENTER
+  - DELETE
   - LEFT SHIFT
   - Z
   - X
@@ -39,11 +39,11 @@ layers:
   - RIGHT SHIFT
   - LEFT COMMAND
   - LEFT ALT
-  - {t: ␣, h: Number}
+  - {t: ␣, h: Move}
   - {t: ␣, h: Function}
   - RIGHT ALT
   - RIGHT CONTROL
-  Number:
+  Move:
   - '`'
   - '1'
   - '2'
@@ -55,7 +55,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - ⌦
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -81,7 +81,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: Qwerty, h: toggle}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -129,6 +129,49 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  Num:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP DIVIDE
+  - KP SUBTRACT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP MULTIPLY
+  - +
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP 1
+  - KP 2
+  - KP 3
+  - ENTER
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP 0
   KeyboardConfig:
   - BT CLR
   - BT 1

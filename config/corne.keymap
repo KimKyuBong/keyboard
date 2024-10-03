@@ -44,8 +44,17 @@
         };
 
         DoubleSpace {
-            bindings = <&lt 3 ENTER>;
+            bindings = <&lt 4 ENTER>;
             key-positions = <38 39>;
+        };
+    };
+
+    behaviors {
+        ContinueSpace: ContinueSpace {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CONTINUESPACE";
+            #binding-cells = <0>;
+            bindings = <&trans>, <&trans>;
         };
     };
 
@@ -61,7 +70,7 @@
 
             bindings = <
 &mt ESC TAB     &kp Q  &kp W  &kp E             &kp R         &kp T          &kp Y        &kp U          &kp I              &kp O    &kp P                &kp BACKSPACE
-&kp LCTRL       &kp A  &kp S  &kp D             &kp F         &kp G          &kp H        &kp J          &kp K              &kp L    &kp SEMICOLON        &kp ENTER
+&kp LCTRL       &kp A  &kp S  &kp D             &kp F         &kp G          &kp H        &kp J          &kp K              &kp L    &kp SEMICOLON        &kp DELETE
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V         &kp B          &kp N        &kp M          &kp COMMA          &kp DOT  &mt BACKSLASH SLASH  &kp RIGHT_SHIFT
                               &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 1 SPACE    &lt 2 SPACE  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
@@ -69,7 +78,7 @@
             label = "Q";
         };
 
-        Number {
+        Move {
             // ------------------------------------------------------------------------------------
             // |     |      |      |       |       |      | # |     |     |     |     |     |     |
             // |     | LGUI | LALT | LCTRL | LSHFT |      | # |     |     |     |     |     |     |
@@ -77,13 +86,13 @@
             //                     |       |       | HELD | # |     |     |     |
 
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7       &kp N8         &kp N9     &kp N0     &kp DEL
+&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7       &kp N8         &kp N9     &kp N0     &trans
 &trans     &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN     &kp UP         &kp RIGHT  &kp MINUS  &kp EQUAL
 &trans     &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END    &trans     &trans
-                           &trans  &to 0   &trans    &trans    &trans       &trans
+                           &trans  &trans  &trans    &trans    &trans       &trans
             >;
 
-            label = "N";
+            label = "M";
         };
 
         Function {
@@ -95,6 +104,17 @@
             >;
 
             label = "F";
+        };
+
+        Num {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE    &kp KP_SUBTRACT
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp PLUS
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER        &trans
+                        &trans  &trans  &trans    &trans  &trans           &kp KP_NUMBER_0
+            >;
+
+            label = "N";
         };
 
         KeyboardConfig {

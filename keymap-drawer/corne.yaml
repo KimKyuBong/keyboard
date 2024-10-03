@@ -84,7 +84,7 @@ layers:
   - {t: Qwerty, h: toggle}
   - {t: ▽, type: trans}
   - KP 0
-  - ''
+  - {t: Macro, h: toggle}
   - {t: ▽, type: trans}
   Macro:
   - '&VsTerm'

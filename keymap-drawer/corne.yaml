@@ -54,8 +54,8 @@ layers:
   - KP 7
   - KP 8
   - KP 9
-  - KP DIVIDE
-  - KP SUBTRACT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -66,8 +66,8 @@ layers:
   - KP 4
   - KP 5
   - KP 6
-  - KP MULTIPLY
-  - +
+  - KP DIVIDE
+  - KP MINUS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -78,13 +78,13 @@ layers:
   - KP 1
   - KP 2
   - KP 3
-  - ENTER
-  - {t: ▽, type: trans}
+  - KP MULTIPLY
+  - KP PLUS
   - {t: ▽, type: trans}
   - {t: Qwerty, h: toggle}
   - {t: ▽, type: trans}
   - KP 0
-  - {t: ▽, type: trans}
+  - ''
   - {t: ▽, type: trans}
   Macro:
   - {t: ▽, type: trans}

@@ -18,7 +18,8 @@
 #define FN 10
 
 // Behavior configuration
-
+&ext_power EP_ON
+&ext_power EP_OFF
 &mt {
     tapping-term-ms = <200>;
     quick_tap_ms = <0>;

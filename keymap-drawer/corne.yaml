@@ -262,6 +262,4 @@ combos:
 - p: [30, 31]
   k: B
 - p: [38, 39]
-  k: {t: ENTER, h: KeyboardConfig}
-- p: [24, 38]
-  k: RIGHT ALT
+  k: {t: RIGHT ALT, h: KeyboardConfig}

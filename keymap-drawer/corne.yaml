@@ -81,10 +81,10 @@ layers:
   - KP MULTIPLY
   - KP PLUS
   - {t: ▽, type: trans}
-  - {t: Qwerty, h: toggle}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP 0
-  - {t: Macro, h: toggle}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Macro:
   - '&VsTerm'
@@ -124,10 +124,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: Qwerty, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Move:
   - '`'

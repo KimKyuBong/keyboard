@@ -96,9 +96,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LC(M) &kp N>,
+                <&kp LCTRL &kp M &kp N>,
                 <&macro_release>,
-                <&kp LC(M) &kp N>;
+                <&kp LCTRL &kp M &kp N>;
 
             label = "HANGULMATH";
         };
@@ -108,9 +108,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LC(LS(ESCAPE))>,
+                <&kp LSHIFT &kp ESCAPE>,
                 <&macro_release>,
-                <&kp LS(ESCAPE)>;
+                <&kp LSHIFT &kp ESC>;
 
             label = "HANGULEXIT";
         };

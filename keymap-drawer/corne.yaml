@@ -41,7 +41,7 @@ layers:
   - LEFT ALT
   - {t: ␣, h: Move}
   - {t: ␣, h: Function}
-  - {t: Num, h: toggle}
+  - '&LayerMove'
   - RIGHT CONTROL
   Num:
   - {t: ▽, type: trans}

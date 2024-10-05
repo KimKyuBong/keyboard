@@ -152,7 +152,7 @@
 &VsTerm      &none  &none  &none  &none  &none    &none  &none        &none  &none  &none  &none
 &none        &none  &none  &none  &none  &none    &none  &none        &none  &none  &none  &none
 &HangulExit  &none  &none  &none  &none  &none    &none  &HangulMath  &none  &none  &none  &none
-                           &none  &none  &none    &none  &none        &none
+                           &none  &none  &none    &none  &trans       &none
             >;
 
             label = "MC";

@@ -36,7 +36,7 @@ layers:
   - ','
   - .
   - {t: /, h: \}
-  - RIGHT SHIFT
+  - {t: ENTER, h: RIGHT SHIFT}
   - LEFT COMMAND
   - LEFT ALT
   - {t: ␣, h: Move}
@@ -49,8 +49,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - KP NUMLOCK
+  - {t: ▽, type: trans}
   - KP 7
   - KP 8
   - KP 9
@@ -61,13 +61,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - CAPSLOCK
+  - {t: ▽, type: trans}
   - KP 4
   - KP 5
   - KP 6
-  - KP DIVIDE
-  - KP MINUS
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -75,11 +74,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - SCROLLLOCK
+  - {t: ▽, type: trans}
   - KP 1
   - KP 2
   - KP 3
-  - KP MULTIPLY
-  - KP PLUS
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

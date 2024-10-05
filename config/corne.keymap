@@ -90,6 +90,30 @@
 
             label = "VSTERM";
         };
+
+        HangulMath: HangulMath {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(M) &kp N>,
+                <&macro_release>,
+                <&kp LC(M) &kp N>;
+
+            label = "HANGULMATH";
+        };
+
+        HangulExit: HangulExit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(LS(ESCAPE))>,
+                <&macro_release>,
+                <&kp LS(ESCAPE)>;
+
+            label = "HANGULEXIT";
+        };
     };
 
     keymap {
@@ -105,7 +129,7 @@
             bindings = <
 &mt ESC TAB     &kp Q  &kp W  &kp E             &kp R         &kp T          &kp Y        &kp U       &kp I              &kp O    &kp P                &kp BACKSPACE
 &kp LCTRL       &kp A  &kp S  &kp D             &kp F         &kp G          &kp H        &kp J       &kp K              &kp L    &kp SEMICOLON        &kp ENTER
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V         &kp B          &kp N        &kp M       &kp COMMA          &kp DOT  &mt BACKSLASH SLASH  &mt RIGHT_SHIFT ENTER
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V         &kp B          &kp N        &kp M       &kp COMMA          &kp DOT  &mt BACKSLASH SLASH  &kp RIGHT_SHIFT
                               &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 3 SPACE    &lt 4 SPACE  &LayerMove  &kp RIGHT_CONTROL
             >;
 
@@ -114,10 +138,10 @@
 
         Num {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp KP_NUMLOCK    &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp CAPSLOCK      &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp SCROLLLOCK    &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
-                        &trans  &trans  &trans            &kp KP_NUMBER_0  &trans           &kp KP_DOT
+&trans  &trans       &trans        &trans           &trans         &kp KP_NUMLOCK    &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
+&trans  &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp CAPSLOCK      &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
+&trans  &trans       &trans        &trans           &trans         &kp SCROLLLOCK    &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
+                                   &trans           &trans         &trans            &kp KP_NUMBER_0  &trans           &kp KP_DOT
             >;
 
             label = "N";
@@ -125,10 +149,10 @@
 
         Macro {
             bindings = <
-&VsTerm  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans    &trans  &trans  &trans
+&VsTerm      &none  &none  &none  &none  &none    &none  &none        &none  &none  &none  &none
+&none        &none  &none  &none  &none  &none    &none  &none        &none  &none  &none  &none
+&HangulExit  &none  &none  &none  &none  &none    &none  &HangulMath  &none  &none  &none  &none
+                           &none  &none  &none    &none  &none        &none
             >;
 
             label = "MC";

@@ -166,9 +166,9 @@
             //                     |       |       | HELD | # |     |     |     |
 
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7       &kp N8         &kp N9     &kp N0            &kp DEL
-&trans     &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN     &kp UP         &kp RIGHT  &kp MINUS         &kp EQUAL
-&trans     &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7       &kp N8         &kp N9     &kp N0     &kp DEL
+&trans     &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN     &kp UP         &kp RIGHT  &kp MINUS  &kp EQUAL
+&trans     &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END    &trans     &trans
                            &trans  &trans  &trans    &trans    &trans       &trans
             >;
 
@@ -177,10 +177,10 @@
 
         Function {
             bindings = <
-&kp F11  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F12
-&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
-&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
-                         &trans  &trans  &trans    &trans  &trans  &trans
+&kp F11  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6            &kp F7             &kp F8  &kp F9  &kp F10  &kp F12
+&trans   &trans  &trans  &trans  &trans  &trans    &kp LS(NUMBER_9)  &kp LS(NUMBER_0)   &trans  &trans  &trans   &trans
+&trans   &trans  &trans  &trans  &trans  &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans  &trans   &trans
+                         &trans  &trans  &trans    &trans            &trans             &trans
             >;
 
             label = "F";

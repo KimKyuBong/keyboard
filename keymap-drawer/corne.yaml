@@ -261,5 +261,6 @@ layers:
 combos:
 - p: [30, 31]
   k: B
+  l: [Qwerty]
 - p: [38, 39]
   k: {t: RIGHT ALT, h: KeyboardConfig}

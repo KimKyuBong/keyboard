@@ -41,6 +41,7 @@
         KoreanB {
             bindings = <&kp B>;
             key-positions = <30 31>;
+            layers = <0>;
         };
 
         DoubleSpace {

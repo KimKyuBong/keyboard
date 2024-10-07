@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - ;
-  - ''''
+  - ENTER
   - LEFT SHIFT
   - Z
   - X
@@ -36,7 +36,7 @@ layers:
   - ','
   - .
   - {t: /, h: \}
-  - {t: ENTER, h: RIGHT SHIFT}
+  - RIGHT SHIFT
   - LEFT COMMAND
   - LEFT ALT
   - {t: ␣, h: Move}
@@ -195,7 +195,7 @@ layers:
   - Sft+ 0
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

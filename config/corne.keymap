@@ -48,6 +48,8 @@
         DoubleSpace {
             bindings = <&lt 5 RIGHT_ALT>;
             key-positions = <38 39>;
+            slow-release;
+            timeout-ms = <200>;
         };
     };
 

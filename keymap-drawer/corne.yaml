@@ -161,8 +161,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Home
-  - PAGE UP
   - PAGE DOWN
+  - PAGE UP
   - End
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

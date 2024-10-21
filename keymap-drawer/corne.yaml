@@ -216,7 +216,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   KeyboardConfig:
-  - BT CLR
+  - BT CLR ALL
   - BT 1
   - BT 2
   - BT 3

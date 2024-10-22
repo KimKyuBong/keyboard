@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   Qwerty:
-  - {t: ↹, h: Esc}
+  - ↹
   - Q
   - W
   - E
@@ -35,16 +35,16 @@ layers:
   - M
   - ','
   - .
-  - {t: /, h: \}
+  - /
   - RIGHT SHIFT
   - LEFT COMMAND
   - LEFT ALT
   - {t: ␣, h: Move}
   - {t: ␣, h: Function}
   - '&LayerMove'
-  - RIGHT CONTROL
+  - RIGHT ALT
   Num:
-  - {t: ▽, type: trans}
+  - Esc
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -152,8 +152,8 @@ layers:
   - ↓
   - ↑
   - →
-  - '-'
-  - '='
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -171,7 +171,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctrl
   Function:
   - F11
   - F1
@@ -185,28 +185,28 @@ layers:
   - F9
   - F10
   - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&LeftDesk'
+  - '&RightDesk'
+  - '&CreateDesk'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Sft+ 9
   - Sft+ 0
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '-'
+  - '='
   - ''''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&Capture'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '['
   - ']'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -215,52 +215,11 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  KeyboardConfig:
-  - BT CLR ALL
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
-  - RGB ON
-  - RGB HUD
-  - RGB HUI
-  - RGB SAD
-  - RGB SAI
-  - ''
-  - OUT TOG
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RGB OFF
-  - RGB SPD
-  - RGB SPI
-  - RGB BRD
-  - RGB BRI
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RGB SAD
-  - RGB EFR
-  - RGB EFF
-  - ''
-  - '&soft_off'
-  - Reset
-  - {type: held}
-  - {type: held}
-  - Reset
-  - '&soft_off'
+  KeyboardConfig: [BT CLR, BT 1, BT 2, BT 3, BT 4, BT 5, RGB ON, RGB HUD, RGB HUI, RGB SAD, RGB SAI, '', OUT TOG, '', '', '', '', '', RGB OFF, RGB SPD, RGB SPI, RGB
+      BRD, RGB BRI, '', '', '', '', '', '', '', '', '', RGB SAD, RGB EFR, RGB EFF, '', '&soft_off', Reset, '', '', Reset, '&soft_off']
 combos:
 - p: [30, 31]
   k: B
   l: [Qwerty]
 - p: [38, 39]
-  k: {t: RIGHT ALT, h: KeyboardConfig}
+  k: '&VsTerm'

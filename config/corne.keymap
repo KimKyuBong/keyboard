@@ -48,7 +48,7 @@
         };
 
         DoubleSpace {
-            bindings = <&lt 5 RIGHT_ALT>;
+            bindings = <&VsTerm>;
             key-positions = <38 39>;
             slow-release;
             timeout-ms = <200>;
@@ -129,6 +129,62 @@
 
             label = "HANGULEXIT";
         };
+
+        Capture: Capture {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT &kp LEFT_WIN>;
+
+            label = "CAPTURE";
+        };
+
+        LeftDesk: LeftDesk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp LEFT>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT &kp LEFT_WIN>;
+
+            label = "LEFTDESK";
+        };
+
+        RightDesk: RightDesk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp RIGHT>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT &kp LEFT_WIN>;
+
+            label = "RIGHTDESK";
+        };
+
+        CreateDesk: CreateDesk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp D>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT &kp LEFT_WIN>;
+
+            label = "CREATEDESK";
+        };
     };
 
     keymap {
@@ -142,10 +198,10 @@
             //                            | ESC/MEDIA | SPACE/NAV | TAB/MOUSE | # | ENTER/SYM | BSPC/NUM | DEL/FN  |
 
             bindings = <
-&mt ESC TAB     &kp Q  &kp W  &kp E             &kp R         &kp T          &kp Y        &kp U       &kp I              &kp O    &kp P                &kp BACKSPACE
-&kp LCTRL       &kp A  &kp S  &kp D             &kp F         &kp G          &kp H        &kp J       &kp K              &kp L    &kp SEMICOLON        &kp ENTER
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V         &kp B          &kp N        &kp M       &kp COMMA          &kp DOT  &mt BACKSLASH SLASH  &kp RIGHT_SHIFT
-                              &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 3 SPACE    &lt 4 SPACE  &LayerMove  &kp RIGHT_CONTROL
+&kp TAB         &kp Q  &kp W  &kp E             &kp R         &kp T          &kp Y        &kp U       &kp I          &kp O    &kp P          &kp BACKSPACE
+&kp LCTRL       &kp A  &kp S  &kp D             &kp F         &kp G          &kp H        &kp J       &kp K          &kp L    &kp SEMICOLON  &kp ENTER
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V         &kp B          &kp N        &kp M       &kp COMMA      &kp DOT  &kp SLASH      &kp RIGHT_SHIFT
+                              &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 3 SPACE    &lt 4 SPACE  &LayerMove  &kp RIGHT_ALT
             >;
 
             label = "Q";
@@ -153,10 +209,10 @@
 
         Num {
             bindings = <
-&trans  &trans       &trans        &trans           &trans         &kp KP_NUMLOCK    &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
-&trans  &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp CAPSLOCK      &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
-&trans  &trans       &trans        &trans           &trans         &kp SCROLLLOCK    &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
-                                   &trans           &trans         &trans            &kp KP_NUMBER_0  &trans           &kp KP_DOT
+&kp ESC  &trans       &trans        &trans           &trans         &kp KP_NUMLOCK    &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
+&trans   &kp KP_PLUS  &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp CAPSLOCK      &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
+&trans   &trans       &trans        &trans           &trans         &kp SCROLLLOCK    &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
+                                    &trans           &trans         &trans            &kp KP_NUMBER_0  &trans           &kp KP_DOT
             >;
 
             label = "N";
@@ -181,10 +237,10 @@
             //                     |       |       | HELD | # |     |     |     |
 
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7         &kp N8       &kp N9     &kp N0     &kp DEL
-&trans     &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp MINUS  &kp EQUAL
-&trans     &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans     &trans
-                           &trans  &trans  &trans    &trans    &trans         &trans
+&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7         &kp N8       &kp N9     &kp N0  &kp DEL
+&trans     &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans  &trans
+&trans     &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans  &trans
+                           &trans  &trans  &trans    &trans    &trans         &kp RCTRL
             >;
 
             label = "M";
@@ -192,10 +248,10 @@
 
         Function {
             bindings = <
-&kp F11  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6            &kp F7             &kp F8  &kp F9  &kp F10  &kp F12
-&trans   &trans  &trans  &trans  &trans  &trans    &kp LS(NUMBER_9)  &kp LS(NUMBER_0)   &trans  &trans  &kp SQT  &trans
-&trans   &trans  &trans  &trans  &trans  &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans  &trans   &trans
-                         &trans  &trans  &trans    &trans            &trans             &trans
+&kp F11    &kp F1      &kp F2       &kp F3    &kp F4  &kp F5    &kp F6            &kp F7             &kp F8     &kp F9         &kp F10  &kp F12
+&LeftDesk  &RightDesk  &CreateDesk  &trans    &trans  &trans    &kp LS(NUMBER_9)  &kp LS(NUMBER_0)   &kp MINUS  &kp EQUAL      &kp SQT  &trans
+&trans     &trans      &trans       &Capture  &trans  &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &kp BACKSLASH  &trans   &trans
+                                    &trans    &trans  &trans    &trans            &trans             &trans
             >;
 
             label = "F";
@@ -203,10 +259,10 @@
 
         KeyboardConfig {
             bindings = <
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_ON   &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &none
-&out OUT_TOG    &none         &none         &none         &none         &none           &rgb_ug RGB_OFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none
-&none           &none         &none         &none         &none         &none           &none            &none            &rgb_ug RGB_SAD  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &none
-                                            &soft_off     &sys_reset    &none           &none            &sys_reset       &soft_off
+&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_ON   &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &none
+&out OUT_TOG  &none         &none         &none         &none         &none           &rgb_ug RGB_OFF  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none
+&none         &none         &none         &none         &none         &none           &none            &none            &rgb_ug RGB_SAD  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &none
+                                          &soft_off     &sys_reset    &none           &none            &sys_reset       &soft_off
             >;
 
             label = "KC";

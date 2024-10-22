@@ -203,8 +203,8 @@
             //                            | ESC/MEDIA | SPACE/NAV | TAB/MOUSE | # | ENTER/SYM | BSPC/NUM | DEL/FN  |
 
             bindings = <
-&kp ESC         &kp Q  &kp W  &kp E             &kp R         &kp T          &kp Y        &kp U       &kp I          &kp O    &kp P          &kp BACKSPACE
-&mt LCTRL TAB   &kp A  &kp S  &kp D             &kp F         &kp G          &kp H        &kp J       &kp K          &kp L    &kp SEMICOLON  &kp ENTER
+&mt ESC TAB     &kp Q  &kp W  &kp E             &kp R         &kp T          &kp Y        &kp U       &kp I          &kp O    &kp P          &kp BACKSPACE
+&kp LCTRL       &kp A  &kp S  &kp D             &kp F         &kp G          &kp H        &kp J       &kp K          &kp L    &kp SEMICOLON  &kp ENTER
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V         &kp B          &kp N        &kp M       &kp COMMA      &kp DOT  &kp SLASH      &kp RIGHT_SHIFT
                               &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 3 SPACE    &lt 4 SPACE  &LayerMove  &kp RIGHT_ALT
             >;

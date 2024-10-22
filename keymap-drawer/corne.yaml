@@ -142,9 +142,9 @@ layers:
   - '9'
   - '0'
   - ⌦
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&LeftDesk'
+  - '&RightDesk'
+  - '&CreateDesk'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -185,9 +185,9 @@ layers:
   - F9
   - F10
   - F12
-  - '&LeftDesk'
-  - '&RightDesk'
-  - '&CreateDesk'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

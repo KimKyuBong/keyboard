@@ -158,7 +158,7 @@
                 <&macro_tap>,
                 <&kp LEFT>,
                 <&macro_release>,
-                <&kp LEFT_SHIFT &kp LEFT_WIN>;
+                <&kp LCTRL &kp LEFT_WIN>;
 
             label = "LEFTDESK";
         };
@@ -172,7 +172,7 @@
                 <&macro_tap>,
                 <&kp RIGHT>,
                 <&macro_release>,
-                <&kp LEFT_SHIFT &kp LEFT_WIN>;
+                <&kp LCTRL &kp LEFT_WIN>;
 
             label = "RIGHTDESK";
         };
@@ -186,7 +186,7 @@
                 <&macro_tap>,
                 <&kp D>,
                 <&macro_release>,
-                <&kp LEFT_SHIFT &kp LEFT_WIN>;
+                <&kp LCTRL &kp LEFT_WIN>;
 
             label = "CREATEDESK";
         };

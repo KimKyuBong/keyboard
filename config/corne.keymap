@@ -53,6 +53,11 @@
             slow-release;
             timeout-ms = <200>;
         };
+
+        KeyboardConfig {
+            bindings = <&mo 5>;
+            key-positions = <39 40 41>;
+        };
     };
 
     behaviors {

@@ -215,11 +215,54 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  KeyboardConfig: [BT CLR, BT 1, BT 2, BT 3, BT 4, BT 5, RGB ON, RGB HUD, RGB HUI, RGB SAD, RGB SAI, '', OUT TOG, '', '', '', '', '', RGB OFF, RGB SPD, RGB SPI, RGB
-      BRD, RGB BRI, '', '', '', '', '', '', '', '', '', RGB SAD, RGB EFR, RGB EFF, '', '&soft_off', Reset, '', '', Reset, '&soft_off']
+  KeyboardConfig:
+  - BT CLR
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - RGB ON
+  - RGB HUD
+  - RGB HUI
+  - RGB SAD
+  - RGB SAI
+  - ''
+  - OUT TOG
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - RGB OFF
+  - RGB SPD
+  - RGB SPI
+  - RGB BRD
+  - RGB BRI
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - RGB SAD
+  - RGB EFR
+  - RGB EFF
+  - ''
+  - '&soft_off'
+  - Reset
+  - ''
+  - {type: held}
+  - {t: Reset, type: held}
+  - {t: '&soft_off', type: held}
 combos:
 - p: [30, 31]
   k: B
   l: [Qwerty]
 - p: [38, 39]
   k: '&VsTerm'
+- p: [39, 40, 41]
+  k: KeyboardConfig

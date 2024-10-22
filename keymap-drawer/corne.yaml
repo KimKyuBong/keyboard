@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   Qwerty:
-  - ↹
+  - Esc
   - Q
   - W
   - E
@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - BACKSPACE
-  - Ctrl
+  - {t: ↹, h: Ctrl}
   - A
   - S
   - D
@@ -44,7 +44,7 @@ layers:
   - '&LayerMove'
   - RIGHT ALT
   Num:
-  - Esc
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

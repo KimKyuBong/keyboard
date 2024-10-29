@@ -227,7 +227,7 @@ layers:
   - RGB HUI
   - RGB SAD
   - RGB SAI
-  - ''
+  - Reset
   - OUT TOG
   - ''
   - ''
@@ -239,7 +239,7 @@ layers:
   - RGB SPI
   - RGB BRD
   - RGB BRI
-  - ''
+  - '&soft_off'
   - ''
   - ''
   - ''
@@ -252,12 +252,12 @@ layers:
   - RGB EFR
   - RGB EFF
   - ''
-  - '&soft_off'
-  - Reset
+  - ''
+  - ''
   - ''
   - {type: held}
-  - {t: Reset, type: held}
-  - {t: '&soft_off', type: held}
+  - {type: held}
+  - {type: held}
 combos:
 - p: [30, 31]
   k: B

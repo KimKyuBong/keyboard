@@ -41,8 +41,8 @@ layers:
   - LEFT ALT
   - {t: ␣, h: Move}
   - {t: ␣, h: Function}
+  - Alt
   - '&LayerMove'
-  - RIGHT ALT
   Num:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -142,12 +142,12 @@ layers:
   - '9'
   - '0'
   - ⌦
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&LeftDesk'
   - '&RightDesk'
   - '&CreateDesk'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - ←
   - ↓
   - ↑

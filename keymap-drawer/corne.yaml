@@ -267,4 +267,4 @@ combos:
 - p: [39, 40, 41]
   k: KC
 - p: [36, 39]
-  k: {t: Ctl+ ␣, h: toggle}
+  k: {t: Gui+ ␣, h: toggle}

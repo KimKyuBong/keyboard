@@ -60,7 +60,7 @@
         };
 
         MacKE {
-            bindings = <&kt LC(SPACE)>;
+            bindings = <&kt LG(SPACE)>;
             key-positions = <36 39>;
         };
     };

@@ -26,7 +26,6 @@
     flavor = "tap-preferred";
     retro-tap;
     hold-trigger-key-positions = <>;
-    quick-tap-ms = <100>;
     hold-while-undecided;
 };
 

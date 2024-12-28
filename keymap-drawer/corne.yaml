@@ -1,6 +1,6 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
-  Qwerty:
+  Q:
   - {t: ↹, h: Esc}
   - Q
   - W
@@ -39,11 +39,11 @@ layers:
   - RIGHT SHIFT
   - LEFT COMMAND
   - LEFT ALT
-  - {t: ␣, h: Move}
-  - {t: ␣, h: Function}
+  - {t: ␣, h: M}
+  - {t: ␣, h: F}
   - Alt
   - '&LayerMove'
-  Num:
+  N:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -86,7 +86,7 @@ layers:
   - KP 0
   - KP DOT
   - {t: ▽, type: trans}
-  Macro:
+  MC:
   - '&VsTerm'
   - ''
   - ''
@@ -129,7 +129,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - ''
-  Move:
+  M:
   - '`'
   - '1'
   - '2'
@@ -172,7 +172,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctrl
-  Function:
+  F:
   - F11
   - F1
   - F2
@@ -215,7 +215,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  KeyboardConfig:
+  KC:
   - BT CLR
   - BT 1
   - BT 2
@@ -261,8 +261,8 @@ layers:
 combos:
 - p: [30, 31]
   k: B
-  l: [Qwerty]
+  l: [Q]
 - p: [38, 39]
   k: '&VsTerm'
 - p: [39, 40, 41]
-  k: KeyboardConfig
+  k: KC

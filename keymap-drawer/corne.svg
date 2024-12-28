@@ -412,6 +412,15 @@ rect.held, rect.combo.held {
 <a href="#KC">
 <text x="553" y="214" class="combo tap layer-activator">KC</text>
 </a></g>
+<g class="combo combopos-3">
+<path d="M356,215 l-114,-8" class="combo"/>
+<path d="M356,215 l114,8" class="combo"/>
+<rect rx="6" ry="6" x="342" y="202" width="28" height="26" class="combo"/>
+<text x="356" y="215" class="combo tap">
+<tspan x="356" dy="-0.6em">Ctl+</tspan><tspan x="356" dy="1.2em">␣</tspan>
+</text>
+<text x="356" y="226" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 331)" class="layer-N">
@@ -630,6 +639,15 @@ rect.held, rect.combo.held {
 <a href="#KC">
 <text x="553" y="214" class="combo tap layer-activator">KC</text>
 </a></g>
+<g class="combo combopos-2">
+<path d="M356,215 l-114,-8" class="combo"/>
+<path d="M356,215 l114,8" class="combo"/>
+<rect rx="6" ry="6" x="342" y="202" width="28" height="26" class="combo"/>
+<text x="356" y="215" class="combo tap">
+<tspan x="356" dy="-0.6em">Ctl+</tspan><tspan x="356" dy="1.2em">␣</tspan>
+</text>
+<text x="356" y="226" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 661)" class="layer-MC">
@@ -778,6 +796,15 @@ rect.held, rect.combo.held {
 <a href="#KC">
 <text x="553" y="214" class="combo tap layer-activator">KC</text>
 </a></g>
+<g class="combo combopos-2">
+<path d="M356,215 l-114,-8" class="combo"/>
+<path d="M356,215 l114,8" class="combo"/>
+<rect rx="6" ry="6" x="342" y="202" width="28" height="26" class="combo"/>
+<text x="356" y="215" class="combo tap">
+<tspan x="356" dy="-0.6em">Ctl+</tspan><tspan x="356" dy="1.2em">␣</tspan>
+</text>
+<text x="356" y="226" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 992)" class="layer-M">
@@ -967,6 +994,15 @@ rect.held, rect.combo.held {
 <a href="#KC">
 <text x="553" y="214" class="combo tap layer-activator">KC</text>
 </a></g>
+<g class="combo combopos-2">
+<path d="M356,215 l-114,-8" class="combo"/>
+<path d="M356,215 l114,8" class="combo"/>
+<rect rx="6" ry="6" x="342" y="202" width="28" height="26" class="combo"/>
+<text x="356" y="215" class="combo tap">
+<tspan x="356" dy="-0.6em">Ctl+</tspan><tspan x="356" dy="1.2em">␣</tspan>
+</text>
+<text x="356" y="226" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1323)" class="layer-F">
@@ -1156,6 +1192,15 @@ rect.held, rect.combo.held {
 <a href="#KC">
 <text x="553" y="214" class="combo tap layer-activator">KC</text>
 </a></g>
+<g class="combo combopos-2">
+<path d="M356,215 l-114,-8" class="combo"/>
+<path d="M356,215 l114,8" class="combo"/>
+<rect rx="6" ry="6" x="342" y="202" width="28" height="26" class="combo"/>
+<text x="356" y="215" class="combo tap">
+<tspan x="356" dy="-0.6em">Ctl+</tspan><tspan x="356" dy="1.2em">␣</tspan>
+</text>
+<text x="356" y="226" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1653)" class="layer-KC">
@@ -1362,6 +1407,15 @@ rect.held, rect.combo.held {
 <a href="#KC">
 <text x="553" y="214" class="combo tap layer-activator">KC</text>
 </a></g>
+<g class="combo combopos-2">
+<path d="M356,215 l-114,-8" class="combo"/>
+<path d="M356,215 l114,8" class="combo"/>
+<rect rx="6" ry="6" x="342" y="202" width="28" height="26" class="combo"/>
+<text x="356" y="215" class="combo tap">
+<tspan x="356" dy="-0.6em">Ctl+</tspan><tspan x="356" dy="1.2em">␣</tspan>
+</text>
+<text x="356" y="226" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <text x="880.0" y="2012.0" class="footer">Keymap View: <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a></text></svg>

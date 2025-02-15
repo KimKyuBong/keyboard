@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   Q:
-  - {t: ↹, h: Esc}
+  - ↹
   - Q
   - W
   - E
@@ -130,7 +130,7 @@ layers:
   - {t: ▽, type: trans}
   - ''
   M:
-  - '`'
+  - Esc
   - '1'
   - '2'
   - '3'
@@ -191,12 +191,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+ 9
-  - Sft+ 0
+  - Sft+9
+  - Sft+0
   - '-'
   - '='
   - ''''
-  - {t: ▽, type: trans}
+  - '`'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -266,5 +266,3 @@ combos:
   k: '&VsTerm'
 - p: [39, 40, 41]
   k: KC
-- p: [36, 39]
-  k: {t: Gui+ ␣, h: toggle}

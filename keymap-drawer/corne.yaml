@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   Q:
-  - Esc
+  - ↹
   - Q
   - W
   - E
@@ -130,7 +130,7 @@ layers:
   - {t: ▽, type: trans}
   - ''
   M:
-  - ↹
+  - Esc
   - '1'
   - '2'
   - '3'

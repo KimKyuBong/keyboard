@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
+layout: {zmk_keyboard: corne}
 layers:
   Q:
   - ↹
@@ -42,7 +42,7 @@ layers:
   - {t: ␣, h: M}
   - {t: ␣, h: F}
   - Alt
-  - '&LayerMove'
+  - {t: N, h: MC}
   N:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -85,38 +85,38 @@ layers:
   - {t: ▽, type: trans}
   - KP 0
   - KP DOT
-  - {t: ▽, type: trans}
+  - {t: Q, h: toggle}
   MC:
-  - '&VsTerm'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - '&HangulExit'
   - ''
   - ''
   - ''
   - ''
+  - '&HangulTable'
   - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&VsTerm'
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&HangulNarrow'
+  - '&HangulWide'
   - ''
   - '&HangulMath'
   - ''
@@ -128,7 +128,7 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - ''
+  - {type: held}
   M:
   - Esc
   - '1'

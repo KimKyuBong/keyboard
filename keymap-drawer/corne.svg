@@ -410,18 +410,18 @@ rect.held, rect.combo.held {
 <text x="560" y="150" class="combo tap">B</text>
 </g>
 <g class="combo combopos-1">
-<path d="M420,224 l-50,0" class="combo"/>
-<path d="M420,224 l50,0" class="combo"/>
-<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
-<text x="420" y="224" class="combo tap"><tspan style="font-size: 86%">&amp;VsTerm</tspan></text>
-</g>
-<g class="combo combopos-2">
 <path d="M553,214 l-46,7" class="combo"/>
 <path d="M553,214 l44,-7" class="combo"/>
 <rect rx="6" ry="6" x="539" y="201" width="28" height="26" class="combo"/>
 <a href="#KC">
 <text x="553" y="214" class="combo tap layer-activator">KC</text>
 </a></g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="571" y="196" width="28" height="26" class="combo"/>
+<a href="#N">
+<text x="585" y="209" class="combo tap layer-activator">N</text>
+</a><text x="585" y="220" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 331)" class="layer-N">
@@ -630,18 +630,18 @@ rect.held, rect.combo.held {
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g class="combo combopos-0">
-<path d="M420,224 l-50,0" class="combo"/>
-<path d="M420,224 l50,0" class="combo"/>
-<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
-<text x="420" y="224" class="combo tap"><tspan style="font-size: 86%">&amp;VsTerm</tspan></text>
-</g>
-<g class="combo combopos-1">
 <path d="M553,214 l-46,7" class="combo"/>
 <path d="M553,214 l44,-7" class="combo"/>
 <rect rx="6" ry="6" x="539" y="201" width="28" height="26" class="combo"/>
 <a href="#KC">
 <text x="553" y="214" class="combo tap layer-activator">KC</text>
 </a></g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="571" y="196" width="28" height="26" class="combo"/>
+<a href="#N">
+<text x="585" y="209" class="combo tap layer-activator">N</text>
+</a><text x="585" y="220" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 661)" class="layer-MC">
@@ -781,18 +781,18 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g class="combo combopos-0">
-<path d="M420,224 l-50,0" class="combo"/>
-<path d="M420,224 l50,0" class="combo"/>
-<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
-<text x="420" y="224" class="combo tap"><tspan style="font-size: 86%">&amp;VsTerm</tspan></text>
-</g>
-<g class="combo combopos-1">
 <path d="M553,214 l-46,7" class="combo"/>
 <path d="M553,214 l44,-7" class="combo"/>
 <rect rx="6" ry="6" x="539" y="201" width="28" height="26" class="combo"/>
 <a href="#KC">
 <text x="553" y="214" class="combo tap layer-activator">KC</text>
 </a></g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="571" y="196" width="28" height="26" class="combo"/>
+<a href="#N">
+<text x="585" y="209" class="combo tap layer-activator">N</text>
+</a><text x="585" y="220" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 992)" class="layer-M">
@@ -970,18 +970,18 @@ rect.held, rect.combo.held {
 <text x="0" y="0" class="key tap">Ctrl</text>
 </g>
 <g class="combo combopos-0">
-<path d="M420,224 l-50,0" class="combo"/>
-<path d="M420,224 l50,0" class="combo"/>
-<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
-<text x="420" y="224" class="combo tap"><tspan style="font-size: 86%">&amp;VsTerm</tspan></text>
-</g>
-<g class="combo combopos-1">
 <path d="M553,214 l-46,7" class="combo"/>
 <path d="M553,214 l44,-7" class="combo"/>
 <rect rx="6" ry="6" x="539" y="201" width="28" height="26" class="combo"/>
 <a href="#KC">
 <text x="553" y="214" class="combo tap layer-activator">KC</text>
 </a></g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="571" y="196" width="28" height="26" class="combo"/>
+<a href="#N">
+<text x="585" y="209" class="combo tap layer-activator">N</text>
+</a><text x="585" y="220" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1323)" class="layer-F">
@@ -1155,18 +1155,18 @@ rect.held, rect.combo.held {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<path d="M420,224 l-50,0" class="combo"/>
-<path d="M420,224 l50,0" class="combo"/>
-<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
-<text x="420" y="224" class="combo tap"><tspan style="font-size: 86%">&amp;VsTerm</tspan></text>
-</g>
-<g class="combo combopos-1">
 <path d="M553,214 l-46,7" class="combo"/>
 <path d="M553,214 l44,-7" class="combo"/>
 <rect rx="6" ry="6" x="539" y="201" width="28" height="26" class="combo"/>
 <a href="#KC">
 <text x="553" y="214" class="combo tap layer-activator">KC</text>
 </a></g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="571" y="196" width="28" height="26" class="combo"/>
+<a href="#N">
+<text x="585" y="209" class="combo tap layer-activator">N</text>
+</a><text x="585" y="220" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1653)" class="layer-KC">
@@ -1361,18 +1361,18 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g class="combo combopos-0">
-<path d="M420,224 l-50,0" class="combo"/>
-<path d="M420,224 l50,0" class="combo"/>
-<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
-<text x="420" y="224" class="combo tap"><tspan style="font-size: 86%">&amp;VsTerm</tspan></text>
-</g>
-<g class="combo combopos-1">
 <path d="M553,214 l-46,7" class="combo"/>
 <path d="M553,214 l44,-7" class="combo"/>
 <rect rx="6" ry="6" x="539" y="201" width="28" height="26" class="combo"/>
 <a href="#KC">
 <text x="553" y="214" class="combo tap layer-activator">KC</text>
 </a></g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="571" y="196" width="28" height="26" class="combo"/>
+<a href="#N">
+<text x="585" y="209" class="combo tap layer-activator">N</text>
+</a><text x="585" y="220" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <text x="880.0" y="2012.0" class="footer">Keymap View: <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a></text></svg>

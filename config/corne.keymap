@@ -46,16 +46,14 @@
             layers = <0>;
         };
 
-        DoubleSpace {
-            bindings = <&VsTerm>;
-            key-positions = <38 39>;
-            slow-release;
-            timeout-ms = <200>;
-        };
-
         KeyboardConfig {
             bindings = <&mo 5>;
             key-positions = <39 40 41>;
+        };
+
+        NumBer {
+            bindings = <&to 1>;
+            key-positions = <40 41>;
         };
     };
 

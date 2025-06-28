@@ -262,7 +262,7 @@ combos:
 - p: [30, 31]
   k: B
   l: [Q]
-- p: [38, 39]
-  k: '&VsTerm'
 - p: [39, 40, 41]
   k: KC
+- p: [40, 41]
+  k: {t: N, h: toggle}

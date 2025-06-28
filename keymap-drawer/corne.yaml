@@ -42,7 +42,7 @@ layers:
   - {t: ␣, h: M}
   - {t: ␣, h: F}
   - Alt
-  - {t: N, h: MC}
+  - {t: '`', h: MC}
   N:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -205,7 +205,7 @@ layers:
   - {t: ▽, type: trans}
   - '['
   - ']'
-  - '`'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - \
   - {t: ▽, type: trans}

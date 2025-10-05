@@ -186,9 +186,9 @@ layers:
   - F10
   - F12
   - {t: ▽, type: trans}
-  - '&mkp LCLK'
-  - Mouse ↑
-  - '&mkp RCLK'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Sft+9
@@ -198,9 +198,9 @@ layers:
   - ''''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Mouse ←
-  - Mouse ↓
-  - Mouse →
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '['
